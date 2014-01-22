@@ -10,8 +10,20 @@
 			55% {-webkit-transform: rotate(179deg)}
 			100% {-webkit-transform: rotate(180deg)}
 		}
+		
+		@-moz-keyframes spin {
+			0%   {-moz-transform: rotate(0deg)}
+			45%   {-moz-transform: rotate(1deg)}
+			55% {-moz-transform: rotate(179deg)}
+			100% {-moz-transform: rotate(180deg)}
+		}
+		
+		.rotate {
+			-webkit-animation: spin 5s linear infinite;
+			-moz-animation: spin 5s linear infinite;
+		}
 		</style>
-		<img style="-webkit-animation: spin 5s linear infinite;" src="http://www.johnlangdon.net/wp-content/uploads/2013/12/Earth-Air-Fire-Water-Combined_JohnLangdon.gif" width="446" height="446">
-		<img style="-webkit-animation: spin 5s linear infinite; width: 30%;" src="http://www.johnlangdon.net/wp-content/uploads/2013/08/Robert-Langdon_JohnLangdon.gif">
+		<img class="rotate" src="http://www.johnlangdon.net/wp-content/uploads/2013/12/Earth-Air-Fire-Water-Combined_JohnLangdon.gif" width="446" height="446">
+		<img class="rotate" style="width: 30%;" src="http://www.johnlangdon.net/wp-content/uploads/2013/08/Robert-Langdon_JohnLangdon.gif">
 	</body>
 </html>
